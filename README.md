@@ -6,11 +6,12 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 * [![RStudio](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/jaanos/APPR-2019-20/master?urlpath=rstudio) RStudio
 
 ## Tematika
-Izbrala sem si temo z naslovom Količine in povprečne cene odkupljenih kmetijskih pridelkov v Sloveniji, s katero bom prikazala kako so se cene in količine raznih kmetijskih izdelkov spreminjale skozi leta in kakšna je povezava med ceno in količino izdelkov. Podatke bom črpala iz Sursa(https://pxweb.stat.si/SiStat/).
+Izbrala sem si temo z naslovom Količine in povprečne cene odkupljenih kmetijskih pridelkov v Sloveniji, s katero bom prikazala kako so se cene in količine raznih kmetijskih pridelkov spreminjale skozi leta in kakšna je povezava med ceno in količino izdelkov. Poleg tega bom še prikazala, v katerih delih Slovenije je posamezna kmetijska panoga najbol razvita, s podatki o kmetijskem gospodarstvu po tipu kmetovanja in statističnih regijah.  Podatke bom črpala iz Sursa(https://pxweb.stat.si/SiStat/).
 
 Tabele:
  1. tabela bo vsebovala letne podatke o količini kmetijskih izdelkov od leta 2000 do 2018.
  2. tabela bo vsebovala letne podatke o ceni kmetijskih izdelkov od leta 2000 do 2018.
+ 3. tabela bo vsebovala podatke o številu kmetij določenega tipa gospodarstva po različnih regijah, iz leta 2007. 
  
  Analizirala bom torej povezanost med količino in ceno ter kako sta količina in cena izdelkov povezani s časom.
  
