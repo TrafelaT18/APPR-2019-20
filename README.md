@@ -11,9 +11,9 @@ Izbrala sem si temo z naslovom Količine in povprečne cene prodanih kmetijskih 
 Tabele:
  1. tabela bo vsebovala letne podatke o količini prodanih kmetijskih izdelkov od leta 2000 do 2018.
  2. tabela bo vsebovala letne podatke o ceni kmetijskih izdelkov od leta 2000 do 2018.
- 3. tabela bo vsebovala količine kmetijskih pridelkov, značilnih za določeno regijo, od leta 2010 do 2018.
+ 3. tabela bo vsebovala količine kmetijskih pridelkov v različnih regijah, od leta 2010 do 2018.
  
- Analizirala bom torej povezanost med količino in ceno kmetijskih pridelkov, kako sta količina in cena izdelkov povezani s časom ter razlike medv oličini pridelkov po regijah.
+ Analizirala bom torej povezanost med količino in ceno kmetijskih pridelkov, kako sta količina in cena izdelkov povezani s časom ter razlike med količino pridelkov po regijah.
 
 
 
