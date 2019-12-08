@@ -6,13 +6,11 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 * [![RStudio](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/jaanos/APPR-2019-20/master?urlpath=rstudio) RStudio
 
 ## Tematika
-Izbrala sem si temo z naslovom Količine in povprečne cene prodanih kmetijskih pridelkov v Sloveniji, s katero bom prikazala kako so se cene in količine raznih kmetijskih pridelkov spreminjale skozi leta in kakšna je povezava med ceno in količino izdelkov. Poleg tega bom še prikazala, v katerih delih Slovenije je posamezna kmetijska panoga najbol razvita, s podatki o kmetijskem gospodarstvu po tipu kmetovanja in statističnih regijah.  Podatke bom črpala iz Sursa in sicer iz https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__02_kmetijske_cene__04_15275_prod_lastn_pride/1527501S.px/ in https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__04_rastlinska_pridelava__01_15024_pridelki_povrsina/1502410S.px/.
-
+Izbrala sem si temo z naslovom Količine in povprečne cene kmetijskih pridelkov v Sloveniji, s katero bom prikazala kako so se cene in količine raznih kmetijskih pridelkov spreminjale skozi leta in kakšna je povezava med ceno in količino izdelkov. Poleg tega bom še prikazala, v katerih delih Slovenije je posamezna kmetijska panoga najbol razvita.  Podatke bom črpala iz Sursa in sicer iz https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__04_rastlinska_pridelava__01_15024_pridelki_povrsina/1502410S.px/ (povprečni pridelek pomembnejših kmetijskih kultur-t/h), https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__03_kmetijska_gospod__08_15738_kmet_gosp_stat_reg/1573804S.px/?fbclid=IwAR2gZyOi1tmyySNB591WT59zYIePpn0x9f-UbL_PgYBPU4hOfiXF_AoEdU0(vrsta živine po regijah), https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__02_kmetijske_cene__04_15275_prod_lastn_pride/1527501S.px/(cene)
 Tabele:
- 1. tabela bo vsebovala letne podatke o količini prodanih kmetijskih izdelkov od leta 2000 do 2018.
- 2. tabela bo vsebovala letne podatke o ceni kmetijskih izdelkov od leta 2000 do 2018.
- 3. tabela bo vsebovala količine kmetijskih pridelkov v različnih regijah, od leta 2010 do 2018.
- 
+ 1. tabela; zdruižla bom količino pridelkov po regijah in povprečne cene v sloveniji v eno tabelo.
+ stolpci: leta -> Slovenija(+cene) in regije
+ vrstice:vrsta kmetijskega pridelka
  Analizirala bom torej povezanost med količino in ceno kmetijskih pridelkov, kako sta količina in cena izdelkov povezani s časom ter razlike med količino pridelkov po regijah.
 
 
