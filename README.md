@@ -1,4 +1,4 @@
-# Analiza podatkov s programom R, 2019/20
+# Količine in povprečne cene prodanih kmetijskih pridelkov v Sloveniji
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
@@ -6,7 +6,7 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 * [![RStudio](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/jaanos/APPR-2019-20/master?urlpath=rstudio) RStudio
 
 ## Tematika
-Izbrala sem si temo z naslovom Količine in povprečne cene prodanih kmetijskih pridelkov v Sloveniji, s katero bom prikazala kako so se cene in količine raznih kmetijskih pridelkov spreminjale skozi leta in kakšna je povezava med ceno in količino izdelkov. Poleg tega bom še prikazala, v katerih delih Slovenije je posamezna kmetijska panoga najbol razvita, s podatki o kmetijskem gospodarstvu po tipu kmetovanja in statističnih regijah.  Podatke bom črpala iz Sursa in sicer iz https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__02_kmetijske_cene__04_15275_prod_lastn_pride/1527501S.px/ in https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__04_rastlinska_pridelava__01_15024_pridelki_povrsina/1502410S.px/.
+Izbrala sem si temo z naslovom Količine in povprečne cene prodanih kmetijskih pridelkov v Sloveniji, s katero bom prikazala kako so se cene in količine raznih kmetijskih pridelkov spreminjale skozi leta in kakšna je povezava med ceno in količino izdelkov. Poleg tega bom še prikazala povprečni pridelek pomembnejših kmetijskih kultur, po statističnih regijah.  Podatke bom črpala iz statističnega urada Republike Slovenije in sicer iz https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__02_kmetijske_cene__04_15275_prod_lastn_pride/1527501S.px/ in https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__04_rastlinska_pridelava__01_15024_pridelki_povrsina/1502410S.px/.
 
 Tabele:
  1. tabela bo vsebovala letne podatke o količini prodanih kmetijskih izdelkov od leta 2000 do 2018.
