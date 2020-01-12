@@ -26,9 +26,10 @@ source("lib/rstudio.r", encoding="UTF-8")
 
 # Izbira teme
 
-Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
+Izbrala sem si temo z naslovom Količine in povprečne cene kmetijskih pridelkov v Sloveniji, s katero bom prikazala kako so se cene in količine raznih kmetijskih pridelkov spreminjale skozi leta in kakšna je povezava med ceno in količino izdelkov. Poleg tega bom še prikazala, v katerih delih Slovenije je posamezna kmetijska panoga najbol razvita. Podatke bom črpala iz Statističnega urada Slovenije.
 
 ![](slike/grb.png)
+
 
 ***
 
