@@ -1,13 +1,10 @@
 library(dplyr)
 library(tidyr)
 library(readr)
-<<<<<<< HEAD
 library(tibble)
 library(ggplot2)
+library(tibble)
 
-
-=======
->>>>>>> e55742509d1f6ab9bb1e4487736ac31df14d7ad3
 
 library(tibble)
 uvoz1 <- read_csv("podatki/povprecni_pridelek.csv",
