@@ -1,6 +1,6 @@
 ---
 title: "Poročilo pri predmetu Analiza podatkov s programom R"
-author: "Študent FMF Trafela"
+author: "Tjaša Trafela"
 output:
   html_document: default
   pdf_document:
@@ -38,26 +38,27 @@ Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
 source("uvoz/uvoz.r", encoding="UTF-8")
 ```
 
-Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
-z Wikipedije. Podatke imamo v dveh razpredelnicah v obliki *tidy data*.
+Uvozila sem podatke o količini kmetijskih pridelkoh po regijah v obliki CSV s statističnega urada.
+Podatke imam v dveh razpredelnicah v obliki *tidy data*.
 
-1. `druzine` - podatki o družinah za vsako občino
-  - `obcina` - spremenljivka: ime občine (neurejen faktor),
-  - `velikost.druzine` - spremenljivka: število otrok v družini (število: 1, 2, 3 ali 4, kjer zadnja vrednost pomeni 4 ali več),
-  - `stevilo.druzin` - meritev: število družin z ustreznim številom otrok v ustrezni občini (število).
+1. `kmetijska.kultura` - podatki o kmetijskih kulturah 
+  - `leto` - spremenljivka: količina kmetijske kulture v določenem letu,
+  - `regija` - spremenljivka: število kmetijske kulture v določeni regiji
+  - `kolicina` - meritev: povprečna količina pridelanega pridelka v t/ha
 
-2. `obcine` - podatki o občinah
-  - `obcina` - spremenljivka: ime občine (neurejen faktor),
-  - `povrsina` - meritev: površina občine v km$^2$ (število),
-  - `prebivalci` - meritev: prebivalstvo občine (število),
-  - `gostota` - meritev: število prebivalcev na km$^2$ (število),
-  - `naselja` - meritev: število naselij v občini (število),
-  - `ustanovitev` - meritev: leto ustanovitve občine (število),
-  - `pokrajina` - meritev: pokrajina, ki ji občina pripada (neurejen faktor),
-  - `regija` - meritev: regija, ki ji občina pripada (neurejen faktor),
-  - `odcepitev` - meritev: podatki o občinah, od katerih se je občina odcepila (besedilo).
+2. `vrsta.zivine` - podatki o živini
+  - `leto` - spremenljivka: število glav živine v določenem letu,
+  - `regija` - spremenljivka: število glav živine v določeni regiji,
+  - `stevilo` - meritev: stevilo  glav živine,
+  
 
-**Opomba**: da bi razpredelnica `obcine` res bila v obliki *tidy data*, bi morali odstraniti stolpec `gostota` (saj je izpeljan iz stolpcev `povrsina` in `prebivalci`), podatke o pokrajinah pa bi morali premakniti v drugo razpredelnico, saj nekatere občine pripadajo dvema pokrajinama. Podobno bi morali narediti tudi s stolpcem `odcepitev`.
+**Opomba**: da je 1. razpredelnica res v obliki *tidy data*, sem morala podati znak, ki označuje manjkajoče podatke("-"), preimoenovala sem naslove stolpcev, ki so sestavljene z več besed in keta sem pretvorila v števila.
+v 2. razpredelnici sem ...
+
+
+
+
+da bi razpredelnica `obcine` res bila v obliki *tidy data*, bi morali odstraniti stolpec `gostota` (saj je izpeljan iz stolpcev `povrsina` in `prebivalci`), podatke o pokrajinah pa bi morali premakniti v drugo razpredelnico, saj nekatere občine pripadajo dvema pokrajinama. Podobno bi morali narediti tudi s stolpcem `odcepitev`.
 
 Spodnji graf prikazuje porazdelitev števila naselij v občinah.
 

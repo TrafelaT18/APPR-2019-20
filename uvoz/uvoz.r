@@ -2,6 +2,7 @@ library(dplyr)
 library(tidyr)
 library(readr)
 library(tibble)
+library(ggplot2)
 
 
 
@@ -21,3 +22,8 @@ uvoz2 <- read_csv("podatki/zivina.csv", # v enem od stolpcev ni podatkov, zato b
   mutate(leto=parse_number(leto))
 
 
+
+
+
+
+       
