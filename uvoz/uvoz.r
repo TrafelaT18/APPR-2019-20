@@ -22,18 +22,19 @@ uvoz2 <- read_csv("podatki/zivina.csv", # v enem od stolpcev ni podatkov, zato b
            " (?=[A-ZČŠŽ])(?!Slovenija)") %>% # delimo po presledku pred veliko črko, razen pred besedo "Slovenija"
   mutate(leto=parse_number(leto))
 
-povprecja.kmetijskih.kultur <- uvoz1 %>% group_by(kmetijska.kultura,regija) %>% summarise(povprecje = sum(kolicina)/9)
-povprecje.kmetijskih.kultur <- povprecja.kmetijskih.kultur %>% group_by(kmetijska.kultura) %>% summarise(povprecje = sum(povprecje)/12)
+povprecja.kmetijskih.kultur <- uvoz1 %>% group_by(kmetijska.kultura,regija) %>% summarise(povprecje = mean(kolicina, na.rm = TRUE))
+povprecje.kmetijskih.kultur <- povprecja.kmetijskih.kultur %>% group_by(kmetijska.kultura) %>% summarise(povprecje = mean(povprecje, na.rm = TRUE))
+
 #zemljevide za nekaj najpogostejših kultur
-povprecja.zivine <- uvoz2 %>% group_by(vrsta.zivine, regija) %>% summarise(povprecje =sum(stevilo)/6)
-povprecje.zivine <- povprecja.zivine %>% group_by(vrsta.zivine) %>% summarise(povprecje=sum(povprecje)/12)
-
+povprecja.zivine <- uvoz2 %>% group_by(vrsta.zivine, regija) %>% summarise(povprecje =mean(stevilo, na.rm = TRUE))
+povprecje.zivine <- povprecja.zivine %>% group_by(vrsta.zivine) %>% summarise(povprecje=mean(povprecje, na.rm = TRUE))
+  
 #kje je najbol razvito gospodarstvo:
-povprecje.regije <- povprecja.kmetijskih.kultur %>% group_by(regija) %>% summarise(povprecje = sum(povprecje)/22)
+povprecje.regije <- povprecja.kmetijskih.kultur %>% group_by(regija) %>% summarise(povprecje = mean(povprecje, na.rm = TRUE))
 
 
-
-
+#diagram za povprecje kmetijskih kultur
+graf.kultur <- ggplot(povprecje.kmetijskih.kultur) + aes(x = kmetijska.kultura, y = povprecje) + geom_path()
 
 
 
