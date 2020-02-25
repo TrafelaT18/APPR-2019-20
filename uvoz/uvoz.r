@@ -4,6 +4,10 @@ library(readr)
 library(tibble)
 library(ggplot2)
 library(tibble)
+library(tmap)
+library(maptools)
+library(rgeos)
+library(rgdal)
 
 
 library(tibble)
@@ -34,7 +38,15 @@ povprecje.regije <- povprecja.kmetijskih.kultur %>% group_by(regija) %>% summari
 
 
 #diagram za povprecje kmetijskih kultur
-graf.kultur <- ggplot(povprecje.kmetijskih.kultur) + aes(x = kmetijska.kultura, y = povprecje) + geom_path()
+#graf.kultur <- ggplot(povprecje.kmetijskih.kultur) + aes(x = as.numeric(kmetijska.kultura), y = povprecje) + geom_histogram()
+
+
+graf.kultur <- ggplot(aes(x = kmetijska.kultura, y = povprecje, group=1), data = povprecje.kmetijskih.kultur) + geom_step() 
+
+graf.zivine <- ggplot(aes(x = vrsta.zivine, y = povprecje, group=1), data = povprecje.zivine) + geom_step() 
+
+#zemljevid
+
 
 
 
