@@ -38,14 +38,12 @@ povprecje.regije <- povprecja.kmetijskih.kultur %>% group_by(regija) %>% summari
 
 
 #diagram za povprecje kmetijskih kultur
-#graf.kultur <- ggplot(povprecje.kmetijskih.kultur) + aes(x = as.numeric(kmetijska.kultura), y = povprecje) + geom_histogram()
 
+graf.kultur <-  ggplot(aes(x = kmetijska.kultura, y = povprecje, group=1), data = povprecje.kmetijskih.kultur) + geom_col() + coord_flip() + ggtitle("Povprečje kmetijskih kultur")
+graf.zivine <- ggplot(aes(x = vrsta.zivine, y = povprecje, group=1), data = povprecje.zivine) + geom_col() + ggtitle("Povprečje živine")
 
-graf.kultur <- ggplot(aes(x = kmetijska.kultura, y = povprecje, group=1), data = povprecje.kmetijskih.kultur) + geom_step() 
+zemljevid <- uvozi.zemljevid("https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_SVN_shp.zip", "gadm36_SVN_1")
 
-graf.zivine <- ggplot(aes(x = vrsta.zivine, y = povprecje, group=1), data = povprecje.zivine) + geom_step() 
-
-#zemljevid
 
 
 

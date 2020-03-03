@@ -2,12 +2,12 @@
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
-* [![Shiny](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/jaanos/APPR-2019-20/master?urlpath=shiny/APPR-2019-20/projekt.Rmd) Shiny
-* [![RStudio](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/jaanos/APPR-2019-20/master?urlpath=rstudio) RStudio
+* [![Shiny](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/TrafelaT18/APPR-2019-2
+* [![RStudio](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/TrafelaT18/APPR-2019-20/master?urlpath=rstudio) RStudio
 
 ## Tematika
 <<<<<<< HEAD
-Izbrala sem si temo z naslovom Količine in povprečne cene prodanih kmetijskih pridelkov v Sloveniji, s katero bom prikazala kako so se cene in količine raznih kmetijskih pridelkov spreminjale skozi leta in kakšna je povezava med ceno in količino izdelkov. Poleg tega bom še prikazala povprečni pridelek pomembnejših kmetijskih kultur, po statističnih regijah.  Podatke bom črpala iz statističnega urada Republike Slovenije in sicer iz https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__02_kmetijske_cene__04_15275_prod_lastn_pride/1527501S.px/ in https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__04_rastlinska_pridelava__01_15024_pridelki_povrsina/1502410S.px/.
+Izbrala sem si temo z naslovom Količine prodanih kmetijskih pridelkov v Sloveniji, s katero bom prikazala kako so se količine raznih kmetijskih pridelkov spreminjale skozi leta, povprečni pridelek pomembnejših kmetijskih kultur po statističnih regijah.  Podatke bom črpala iz statističnega urada Republike Slovenije in sicer iz https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__02_kmetijske_cene__04_15275_prod_lastn_pride/1527501S.px/ in https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__04_rastlinska_pridelava__01_15024_pridelki_povrsina/1502410S.px/.
 
 =======
 Izbrala sem si temo z naslovom Količine in povprečne cene kmetijskih pridelkov v Sloveniji, s katero bom prikazala kako so se cene in količine raznih kmetijskih pridelkov spreminjale skozi leta in kakšna je povezava med ceno in količino izdelkov. Poleg tega bom še prikazala, v katerih delih Slovenije je posamezna kmetijska panoga najbol razvita.  Podatke bom črpala iz Sursa in sicer iz https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__04_rastlinska_pridelava__01_15024_pridelki_povrsina/1502410S.px/ (povprečni pridelek pomembnejših kmetijskih kultur-t/h), https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__03_kmetijska_gospod__08_15738_kmet_gosp_stat_reg/1573804S.px/?fbclid=IwAR2gZyOi1tmyySNB591WT59zYIePpn0x9f-UbL_PgYBPU4hOfiXF_AoEdU0(vrsta živine po regijah), https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__15_kmetijstvo_ribistvo__02_kmetijske_cene__04_15275_prod_lastn_pride/1527501S.px/(cene)
