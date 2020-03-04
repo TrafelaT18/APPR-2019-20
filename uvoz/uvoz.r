@@ -34,18 +34,21 @@ povprecja.zivine <- uvoz2 %>% group_by(vrsta.zivine, regija) %>% summarise(povpr
 povprecje.zivine <- povprecja.zivine %>% group_by(vrsta.zivine) %>% summarise(povprecje=mean(povprecje, na.rm = TRUE))
   
 #kje je najbol razvito gospodarstvo:
-povprecje.regije <- povprecja.kmetijskih.kultur %>% group_by(regija) %>% summarise(povprecje = mean(povprecje, na.rm = TRUE))
+povprecje.regije.pridelkov <- povprecja.kmetijskih.kultur %>% group_by(regija) %>% summarise(povprecje = mean(povprecje, na.rm = TRUE))
 
-
+povprecje.regije.zivine <- povprecja.zivine %>% group_by(regija) %>% summarise(povprecje = mean(povprecje, na.rm = TRUE))
 #diagram za povprecje kmetijskih kultur
 
 graf.kultur <-  ggplot(aes(x = kmetijska.kultura, y = povprecje, group=1), data = povprecje.kmetijskih.kultur) + geom_col() + coord_flip() + ggtitle("Povprečje kmetijskih kultur")
 graf.zivine <- ggplot(aes(x = vrsta.zivine, y = povprecje, group=1), data = povprecje.zivine) + geom_col() + ggtitle("Povprečje živine")
 
+
+
 zemljevid <- uvozi.zemljevid("https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_SVN_shp.zip", "gadm36_SVN_1")
 
+zemljevid1 <- tm_shape(merge(zemljevid, povprecje.regije.pridelkov, by.x="NAME_1", by.y="regija" )) + tm_polygons("povprecje",title="Povprečje") + tm_layout(title="Povprečna razširjenost kmetijskih izdelkov po regijah") 
 
-
+zemljevid2 <- tm_shape(merge(zemljevid, povprecje.regije.zivine, by.x="NAME_1", by.y="regija" )) + tm_polygons("povprecje",title="Povprečje") + tm_layout(title="Povprečna razširjenost živinorejskih pridelkov") 
 
 
        
