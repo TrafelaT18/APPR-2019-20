@@ -50,5 +50,6 @@ zemljevid1 <- tm_shape(merge(zemljevid, povprecje.regije.pridelkov, by.x="NAME_1
 
 zemljevid2 <- tm_shape(merge(zemljevid, povprecje.regije.zivine, by.x="NAME_1", by.y="regija" )) + tm_polygons("povprecje",title="Povprečje") + tm_layout(title="Povprečna razširjenost živinorejskih pridelkov") 
 
-
+#primorsko notranjska = notranjsko kraška
+#spodne posavska = posavska
        
