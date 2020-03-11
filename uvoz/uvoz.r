@@ -43,13 +43,22 @@ graf.kultur <-  ggplot(aes(x = kmetijska.kultura, y = povprecje, group=1), data 
 graf.zivine <- ggplot(aes(x = vrsta.zivine, y = povprecje, group=1), data = povprecje.zivine) + geom_col() + ggtitle("Povprečje živine")
 
 
+#preimenovanje regij tako kot v zemljevidu
+povprecje.regije.pridelkov$regija[10] <- "Notranjsko-kraška"
+povprecje.regije.pridelkov$regija[9] <- "Spodnjeposavska"
 
-zemljevid <- uvozi.zemljevid("https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_SVN_shp.zip", "gadm36_SVN_1")
+povprecje.regije.zivine$regija[10] <- "Notranjsko-kraška"
+povprecje.regije.zivine$regija[9] <- "Spodnjeposavska"
+
+
+
+zemljevid <- uvozi.zemljevid("https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_SVN_shp.zip", "gadm36_SVN_1", encoding = "UTF-8")
 
 zemljevid1 <- tm_shape(merge(zemljevid, povprecje.regije.pridelkov, by.x="NAME_1", by.y="regija" )) + tm_polygons("povprecje",title="Povprečje") + tm_layout(title="Povprečna razširjenost kmetijskih izdelkov po regijah") 
 
 zemljevid2 <- tm_shape(merge(zemljevid, povprecje.regije.zivine, by.x="NAME_1", by.y="regija" )) + tm_polygons("povprecje",title="Povprečje") + tm_layout(title="Povprečna razširjenost živinorejskih pridelkov") 
 
-#primorsko notranjska = notranjsko kraška
-#spodne posavska = posavska
+
+
+
        
